@@ -4,17 +4,15 @@ function appendToDisplay(input){
     display.value += input;
 }
 
-function clearDisplay(){    
-
+function clearDisplay(){
     display.value = "";
 }
 
-function calculator(){
+function calculate(){
     try{
         display.value = eval(display.value);
     }
-    catch(error)
-    {
+    catch(error){
         display.value = "Error";
     }
 }
